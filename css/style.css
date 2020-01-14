@@ -39,6 +39,10 @@ body{
   color: #333;
 }
 
+.hamberger_wrapper{
+  display: none;
+}
+
 /*main*/
 
 /*main_title*/
@@ -226,12 +230,17 @@ body{
 }
 
 .nav_wrapper i:hover{
-  padding: 20px 90px;
+  height: 60px;
+  width: 185px;
   background-color: #fff;
+  line-height: 60px;
 }
 
 .sns_icon_format{
-  padding: 20px 90px;
+  height: 60px;
+  line-height: 60px;
+  width: 185px;
+  display: inline-block;
 }
 
 /*footer*/
@@ -360,19 +369,43 @@ body{
 
   /*header*/
   .header_button{
-    font-size: 0;
-    background-color: #fff;
-    position: relative;
+    display: none;
   }
 
-  .header_button:after{
-    font-size: 12px;
-    content: "≡";
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    color: #ddd;
+  .hamberger_wrapper{
+    background-color: greenyellow;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 10px solid black !important;
   }
+
+  .hamberger_menu{
+    display: block;
+    position: relative;
+    border: 10px solid black !important;
+    top: 5px;
+    left: 5px;
+  }
+
+  .hamberger_inner{
+    
+    width: 20px;
+    height: 3px;
+    background-color: red;
+    position: relative;
+    border: 10px solid black !important;
+  }
+
+  .hamberger_inner:nth-of-type(2){
+   top: 5px;
+  }
+
+  .hamberger_inner:nth-of-type(3){
+    top: 10px;
+  }
+
+
 
   /*main*/
   .main_theme_wrapper{
