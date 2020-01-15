@@ -234,12 +234,14 @@ body{
   width: 185px;
   background-color: #fff;
   line-height: 60px;
+  box-sizing: border-box;
 }
 
 .sns_icon_format{
   height: 60px;
   line-height: 60px;
   width: 185px;
+  box-sizing: border-box;
   display: inline-block;
 }
 
@@ -350,13 +352,8 @@ body{
   }
 
 /*SNS*/
-
-  .nav_wrapper i:hover{
-    padding: 20px 75px;
-  }
-
-  .sns_icon_format{
-    padding: 20px 75px;
+  .nav_wrapper{
+    width: 100%;
   }
 
 }
@@ -373,39 +370,33 @@ body{
   }
 
   .hamberger_wrapper{
-    background-color: greenyellow;
-    width: 30px;
-    height: 30px;
+    padding: 10px;
     display: block;
-    border: 10px solid black !important;
+    border: 1px solid #ddd;
+    border-radius: 4px;
   }
 
   .hamberger_menu{
     display: block;
     position: relative;
-    border: 10px solid black !important;
-    top: 5px;
-    left: 5px;
+    top: -5px;
+    padding: 5px 0 5px;
   }
 
   .hamberger_inner{
-    
-    width: 20px;
+    width: 25px;
     height: 3px;
-    background-color: red;
+    background-color: #ddd;
     position: relative;
-    border: 10px solid black !important;
   }
 
   .hamberger_inner:nth-of-type(2){
-   top: 5px;
+    top: 5px;
   }
 
   .hamberger_inner:nth-of-type(3){
     top: 10px;
   }
-
-
 
   /*main*/
   .main_theme_wrapper{
@@ -415,23 +406,18 @@ body{
   .main_theme{
     font-size: 80px;
   }
-  
-  .sub_theme{
-    font-size: 30px;
-    color: #c0c0c0;
-    text-align: center;
-    box-sizing: border-box;
-    margin-top: 20px;
-  }
 
   /*sns*/
   .nav_wrapper{
-    width: 100%;
-    padding: 50px 0;
+    padding: 50px 0; 
   }
-  
+
   .sns_icon_format{
-    display: block;
+    width: 100%;
   }
+
+
+
+
 }
 
